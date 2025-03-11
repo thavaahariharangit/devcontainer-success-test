@@ -1,0 +1,9 @@
+version: 2
+updates:
+  - package-ecosystem: devcontainers
+    directory: /
+    schedule:
+      interval: weekly
+    ignore:
+      - dependency-name: ghcr.io/codspace/versioning/foo
+        versions: "> 2.11.1"
